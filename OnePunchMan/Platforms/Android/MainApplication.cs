@@ -5,7 +5,6 @@ using Android.Runtime;
 [assembly: UsesFeature("android.hardware.location", Required = false)]
 [assembly: UsesFeature("android.hardware.location.gps", Required = false)]
 [assembly: UsesFeature("android.hardware.location.network", Required = false)]
-[assembly: UsesPermission(Manifest.Permission.AccessBackgroundLocation)]
 namespace OnePunchMan;
 
 [Application]
