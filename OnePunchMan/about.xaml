@@ -15,15 +15,32 @@
             HorizontalOptions="Center" />
         <Button
             x:Name="gettime"
-            Text="Now Time"
+            Text="現在時刻"
             SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnTime"
+            Clicked="OnClicked_Get_NowTime"
             HorizontalOptions="Center" />
         <Button
-            x:Name="goto"
-            Text="Click me"
+            x:Name="gotomain"
+            Text="メインページに戻る"
             SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnClicked"
+            Clicked="OnClicked_Move_Main"
+            HorizontalOptions="Center" />
+        <Label
+            x:Name="StopWatch"
+            Text="00:00:00"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Button
+            x:Name="starttimer"
+            Text="タイマースタート"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnClicked_Start_Timer"
+            HorizontalOptions="Center" />
+        <Button
+            x:Name="stoptimer"
+            Text="タイマーストップ"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnClicked_Stop_Timer"
             HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
