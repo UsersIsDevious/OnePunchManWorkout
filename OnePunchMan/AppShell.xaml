@@ -3,14 +3,29 @@
     x:Class="OnePunchMan.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:OnePunchMan"
+    xmlns:local="clr-namespace:OnePunchMan.Pages"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:Home}"
+        Route="Home" />
 
+    <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate local:Settings}"
+        Route="Settings" />
+
+    <ShellContent
+        Title="Counter"
+        ContentTemplate="{DataTemplate local:Activity_Counter}"
+        Route="Activity_Counter" />
+
+    <ShellContent
+        Title="Running"
+        ContentTemplate="{DataTemplate local:Activity_Running}"
+        Route="Activity_Running" />
+    
     <ShellContent
         Title="about"
         ContentTemplate="{DataTemplate local:about}"
