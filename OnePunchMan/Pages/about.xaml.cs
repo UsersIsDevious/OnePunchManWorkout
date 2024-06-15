@@ -5,30 +5,32 @@ using System;
 using System.Timers;
 using System.Diagnostics.Metrics;
 using Android.Media;
+using Xamarin.KotlinX.Coroutines;
 
 public partial class about : ContentPage
 {
+    IDispatcherTimer timer = Application.Current.Dispatcher.CreateTimer();
 
-    Timer timer = new Timer();
-    
     int counter = 0;
 
-    void Timer_Counter(Object source, ElapsedEventArgs e)
+    async void Timer_Counter()
     {
         counter++;
         int h = counter / 3600;
-        int m = (counter - h * 3600) / 60;
-        int s = (counter - h * 3600) - (m * 60);
+        int s = counter % 60;
+        int m = counter % 3600 / 60;
         string DisplayTime = String.Format("{0:00}:{1:00}:{2:00}", h, m, s);
-
+        
         displaytimer(DisplayTime);
     }
 
     public about()
     {
         InitializeComponent();
-        timer.Interval = 1000; // 1秒ごとに処理を行う
-        timer.Elapsed += Timer_Counter;
+        StopWatch.Text = "00:00:00";
+
+        timer.Interval = TimeSpan.FromSeconds(1); // 1秒間隔
+        timer.Tick += (s, e) => Timer_Counter();
     }
 
     private void OnClicked_Get_NowTime(object sender, EventArgs e)
@@ -43,7 +45,7 @@ public partial class about : ContentPage
         await Shell.Current.GoToAsync("//Home");
     }
 
-    private void displaytimer(string DisplayTime)
+    private async void displaytimer(string DisplayTime)
     {
         StopWatch.Text = DisplayTime;
     }
