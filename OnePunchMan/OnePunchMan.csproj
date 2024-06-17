@@ -61,9 +61,18 @@
 	<ItemGroup>
 	  <None Remove="Pages\" />
 	  <None Remove="Contents\" />
+	  <None Remove="Resources\Images\icon_about.png" />
+	  <None Remove="Resources\Images\icon_about_ios.png" />
+	  <None Remove="Resources\Images\icon_notes.png" />
+	  <None Remove="Resources\Images\icon_notes_ios.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
 	  <Folder Include="Contents\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Tutorial.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>
