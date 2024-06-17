@@ -972,3 +972,7 @@ C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android
 C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\resizetizer\r\drawable\icon_about.png
+C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\resizetizer\r\drawable\icon_about_ios.png
+C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\resizetizer\r\drawable\icon_notes.png
+C:\Users\conecone\Desktop\work\OnePunchManWorkout\Notes\obj\Debug\net7.0-android\resizetizer\r\drawable\icon_notes_ios.png
